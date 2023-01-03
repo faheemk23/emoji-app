@@ -9,7 +9,9 @@ var emojiDictionary = {
   "😘": "Kissing heart",
   "😑": "Expressionless",
   "😏": "Smirk",
-  "🥶": "Cold face"
+  "🥶": "Cold face",
+  "🤧": "Hot face",
+  "🤮": "Face vomiting",
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
