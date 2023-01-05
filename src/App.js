@@ -10,7 +10,7 @@ var emojiDictionary = {
   "😑": "Expressionless",
   "😏": "Smirk",
   "🥶": "Cold face",
-  "🤧": "Hot face",
+  "🤧": "Sneezing",
   "🤮": "Face vomiting",
 };
 
