@@ -1,2 +1,3 @@
 # emoji-app
-Created with CodeSandbox
+
+An app that explains emojis using ReactJS.
