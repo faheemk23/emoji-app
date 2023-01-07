@@ -9,5 +9,30 @@ input {
 }
 
 div {
-  padding: 0.5rem;
+  padding: 0;
+  margin: 0rem;
+}
+
+.footer {
+  background-color: #1e293b;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+  margin: 10rem 0rem 0rem 0rem;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+h1 {
+  background-color: #e2e8f0;
+  padding: 1.5rem;
+  margin-top: 0rem;
 }
