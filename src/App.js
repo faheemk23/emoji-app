@@ -21,9 +21,11 @@ export default function App() {
 
   function emojiInputHandler(event) {
     var userInput = event.target.value;
-
-    var meaning = emojiDictionary[userInput];
-
+    if (userInput === "") {
+      meaning = "";
+    } else {
+      var meaning = emojiDictionary[userInput];
+    }
     if (meaning === undefined) {
       meaning = "we don't have this in our database";
     }
