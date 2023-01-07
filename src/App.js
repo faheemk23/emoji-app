@@ -21,12 +21,12 @@ var emojiDictionary = {
 var emojisWeKnow = Object.keys(emojiDictionary);
 
 export default function App() {
-  var [meaning, setMeaning] = useState("Output will come here");
+  var [meaning, setMeaning] = useState("Translation will appear here...");
 
   function emojiInputHandler(event) {
     var userInput = event.target.value;
     if (userInput === "") {
-      meaning = "Output will come here";
+      meaning = "Translation will appear here...";
     } else {
       meaning = emojiDictionary[userInput];
     }
@@ -46,13 +46,13 @@ export default function App() {
     <div style={{ padding: "0rem" }} className="App">
       <h1>Emoji interpreter</h1>
       <input
+        style={{ fontSize: "large" }}
         onChange={emojiInputHandler}
         placeholder="Enter your emoji here"
       ></input>
       <div
         style={{
-          fontSize: "larger",
-          border: "solid 1px black",
+          fontSize: "2rem",
           maxWidth: "15%",
           margin: "1rem auto ",
           padding: "1rem",
@@ -61,8 +61,10 @@ export default function App() {
       >
         {meaning}
       </div>
-      <hr></hr>
-      <div style={{ fontSize: "2rem", color: "#4D7C0F" }}>emojis we know :</div>
+      <hr style={{ margin: "2rem" }}></hr>
+      <div style={{ fontSize: "1.5rem", color: "#4D7C0F", marginTop: "2rem" }}>
+        emojis we know :
+      </div>
       <div
         style={{
           border: "1px solid black",
